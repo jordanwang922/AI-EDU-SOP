@@ -16,8 +16,9 @@
 | [design/design.md](./design/design.md) | **设计风格主文档**：小清新妈妈向、潘通/pastel 参考、完整 Hex Token |
 | [design/H5视觉规范与Figma.md](./design/H5视觉规范与Figma.md) | **Figma 链接**、颜色 / 间距 Token、字体层级（色值与 design.md 对齐） |
 | [design/Figma-家长端页面示意.md](./design/Figma-家长端页面示意.md) | **家长端 + 后台全链路线框**在 Figma 中的分页与 Frame 清单 |
-| [architecture/技术架构说明书.md](./architecture/技术架构说明书.md) | 前后端分离、**1.0 实施范围**、豆包封装、一键生成词条接口 |
-| [architecture/数据模型与扩展性.md](./architecture/数据模型与扩展性.md) | PostgreSQL 表级预留、**AI 生成作业表**、家长用户表占位 |
+| [architecture/系统设计规则.md](./architecture/系统设计规则.md) | **三层浏览路径**（取消中间列表层）、**手工 + 点击热度排序**、与 PRD 差异说明 |
+| [architecture/技术架构说明书.md](./architecture/技术架构说明书.md) | 前后端分离、**1.0 实施范围**、导航与排序、豆包封装、一键生成词条接口 |
+| [architecture/数据模型与扩展性.md](./architecture/数据模型与扩展性.md) | PostgreSQL 表级预留、**AI 生成作业表**、热度/点击占位、家长用户表占位 |
 
 ## 协作与维护
 
