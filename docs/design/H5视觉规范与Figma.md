@@ -1,6 +1,7 @@
 # H5 视觉规范与 Figma
 
-> 用于 1.0 家长端移动端 Web 的配色与字体层级对齐；开发时可对照本文与 Figma Variables。
+> 用于 1.0 家长端移动端 Web 的配色与字体层级对齐；开发时可对照本文与 Figma Variables。  
+> **完整风格叙事、潘通/母婴趋势引用与色板 rationale 见 [`design.md`](./design.md)**（主文档）。
 
 ## Figma 文件（独立新项目）
 
@@ -17,23 +18,25 @@
 
 ## 语义色 Token（与 Variables 一致）
 
+> 下表与 `design.md` 完全一致；若冲突以 **`design.md` 修订日期更新者**为准。
+
 | Token | 用途 | Hex |
 | --- | --- | --- |
-| `color/text/primary` | 主标题、正文强调 | `#0F172A` |
-| `color/text/secondary` | 次级说明 | `#64748B` |
-| `color/text/tertiary` | 辅助 / 禁用感 | `#94A3B8` |
-| `color/bg/page` | 页面背景 | `#F8FAFC` |
-| `color/bg/elevated` | 卡片 / 浮层白底 | `#FFFFFF` |
-| `color/border/subtle` | 分割线、描边 | `#E2E8F0` |
-| `color/brand/primary` | 主按钮、链接、选中态 | `#0284C7` |
-| `color/brand/primary-pressed` | 主按钮按下 | `#0369A1` |
-| `color/action/cta` | **强操作（复制提示词等）** | `#EA580C` |
-| `color/action/cta-pressed` | CTA 按下 | `#C2410C` |
-| `color/semantic/success` | 成功（已复制等） | `#16A34A` |
-| `color/semantic/warning` | 警告 | `#CA8A04` |
-| `color/semantic/error` | 错误 | `#DC2626` |
+| `color/text/primary` | 主标题、正文 | `#3D3835` |
+| `color/text/secondary` | 次级说明 | `#7A7269` |
+| `color/text/tertiary` | 辅助 | `#A89F94` |
+| `color/bg/page` | 页面背景（燕麦米白） | `#FAF7F4` |
+| `color/bg/elevated` | 卡片 / 浮层 | `#FFFFFF` |
+| `color/border/subtle` | 分割线、描边 | `#E8E4DF` |
+| `color/brand/primary` | 主按钮、链接（鼠尾草绿） | `#8FAE9D` |
+| `color/brand/primary-pressed` | 主按钮按下 | `#6F927F` |
+| `color/action/cta` | **强操作（复制提示词等）**（雾粉） | `#E5989B` |
+| `color/action/cta-pressed` | CTA 按下 | `#CF7F84` |
+| `color/semantic/success` | 成功 | `#89B89A` |
+| `color/semantic/warning` | 警告 | `#D4A574` |
+| `color/semantic/error` | 错误 | `#D48989` |
 
-**基调**：教育产品、可信、温和；**主色 Sky** 偏理性；**CTA 用橙** 区分「一键复制」等高优先级动作，避免与主色混淆。
+**基调**：**小清新、妈妈向** — 暖灰字 + 鼠尾草绿主色 + 雾粉强调；点缀可选 `#B8C5E0`（雾紫，小面积）。参见 `design.md` 第 2～3 节趋势说明。
 
 ## 间距与圆角 Token
 
@@ -60,4 +63,5 @@
 
 | 版本 | 日期 | 说明 |
 | --- | --- | --- |
+| 0.2 | 2026-05-10 | 对齐 `design.md` 小清新色板；旧 Sky+橙方案废止 |
 | 0.1 | 2026-05-10 | 初版：独立 Figma 文件、Token 表与 Figma 画布示意 |
