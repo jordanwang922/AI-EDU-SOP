@@ -12,8 +12,10 @@
 
 | 文档 | 说明 |
 | --- | --- |
-| [design/产品设计说明书.md](./design/产品设计说明书.md) | 目标用户、核心流程、后台与 AI 辅助生产、数据留存、商业形态与演进 |
-| [architecture/技术架构说明书.md](./architecture/技术架构说明书.md) | 前后端分离、多端演进路径（H5 → 小程序 → App）、内容发布与 AI 流水线建议 |
+| [design/产品设计说明书.md](./design/产品设计说明书.md) | 目标用户、核心流程、**1.0 边界（无登录、后台 AI）**、演进路径 |
+| [design/H5视觉规范与Figma.md](./design/H5视觉规范与Figma.md) | **Figma 链接**、颜色 / 间距 Token、字体层级 |
+| [architecture/技术架构说明书.md](./architecture/技术架构说明书.md) | 前后端分离、**1.0 实施范围**、豆包封装、一键生成词条接口 |
+| [architecture/数据模型与扩展性.md](./architecture/数据模型与扩展性.md) | PostgreSQL 表级预留、**AI 生成作业表**、家长用户表占位 |
 
 ## 协作与维护
 
