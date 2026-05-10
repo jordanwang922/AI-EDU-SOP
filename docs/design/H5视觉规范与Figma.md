@@ -18,25 +18,26 @@
 
 ## 语义色 Token（与 Variables 一致）
 
-> 下表与 `design.md` 完全一致；若冲突以 **`design.md` 修订日期更新者**为准。
+> 下表与 `design.md` **v1.1** 完全一致；若冲突以 **`design.md` 为准**。
 
 | Token | 用途 | Hex |
 | --- | --- | --- |
-| `color/text/primary` | 主标题、正文 | `#3D3835` |
-| `color/text/secondary` | 次级说明 | `#7A7269` |
-| `color/text/tertiary` | 辅助 | `#A89F94` |
-| `color/bg/page` | 页面背景（燕麦米白） | `#FAF7F4` |
+| `color/text/primary` | 主标题、正文 | `#134E4A` |
+| `color/text/secondary` | 次级说明 | `#64748B` |
+| `color/text/tertiary` | 辅助 | `#94A3B8` |
+| `color/bg/page` | 页面背景（薄荷浴白） | `#F0FDFA` |
 | `color/bg/elevated` | 卡片 / 浮层 | `#FFFFFF` |
-| `color/border/subtle` | 分割线、描边 | `#E8E4DF` |
-| `color/brand/primary` | 主按钮、链接（鼠尾草绿） | `#8FAE9D` |
-| `color/brand/primary-pressed` | 主按钮按下 | `#6F927F` |
-| `color/action/cta` | **强操作（复制提示词等）**（雾粉） | `#E5989B` |
-| `color/action/cta-pressed` | CTA 按下 | `#CF7F84` |
-| `color/semantic/success` | 成功 | `#89B89A` |
-| `color/semantic/warning` | 警告 | `#D4A574` |
-| `color/semantic/error` | 错误 | `#D48989` |
+| `color/bg/subtle` | 分区 / chip 浅底 | `#CCFBF1` |
+| `color/border/subtle` | 分割线、描边 | `#99F6E4` |
+| `color/brand/primary` | 主按钮、链接（明亮 Teal） | `#14B8A6` |
+| `color/brand/primary-pressed` | 主按钮按下 | `#0D9488` |
+| `color/action/cta` | **强操作（复制提示词等）** | `#EC4899` |
+| `color/action/cta-pressed` | CTA 按下 | `#DB2777` |
+| `color/semantic/success` | 成功 | `#34D399` |
+| `color/semantic/warning` | 警告 | `#FBBF24` |
+| `color/semantic/error` | 错误 | `#F87171` |
 
-**基调**：**小清新、妈妈向** — 暖灰字 + 鼠尾草绿主色 + 雾粉强调；点缀可选 `#B8C5E0`（雾紫，小面积）。参见 `design.md` 第 2～3 节趋势说明。
+**基调**：**明亮小清新** — 薄荷浴白底 + **Teal-500** 主色 + **Pink-500** 强操作；避免灰燕麦 / 莫兰迪灰绿。详见 `design.md` v1.1。
 
 ## 间距与圆角 Token
 
@@ -63,5 +64,6 @@
 
 | 版本 | 日期 | 说明 |
 | --- | --- | --- |
+| 0.3 | 2026-05-10 | 对齐 `design.md` **v1.1 明亮 Teal + Pink**，废止偏莫兰迪 v1.0 色 |
 | 0.2 | 2026-05-10 | 对齐 `design.md` 小清新色板；旧 Sky+橙方案废止 |
 | 0.1 | 2026-05-10 | 初版：独立 Figma 文件、Token 表与 Figma 画布示意 |
