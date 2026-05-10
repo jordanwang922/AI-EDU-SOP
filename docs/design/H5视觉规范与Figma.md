@@ -18,26 +18,26 @@
 
 ## 语义色 Token（与 Variables 一致）
 
-> 下表与 `design.md` **v1.1** 完全一致；若冲突以 **`design.md` 为准**。
+> 下表与 `design.md` **v1.2（用户六色盘）** 完全一致；若冲突以 **`design.md` 为准**。
 
 | Token | 用途 | Hex |
 | --- | --- | --- |
-| `color/text/primary` | 主标题、正文 | `#134E4A` |
-| `color/text/secondary` | 次级说明 | `#64748B` |
-| `color/text/tertiary` | 辅助 | `#94A3B8` |
-| `color/bg/page` | 页面背景（薄荷浴白） | `#F0FDFA` |
+| `color/text/primary` | 主标题、正文（森绿） | `#657166` |
+| `color/text/secondary` | 次级说明 | `#7E8780` |
+| `color/text/tertiary` | 辅助 | `#9CA39C` |
+| `color/bg/page` | 页面背景（薄荷浴） | `#DAEBE3` |
 | `color/bg/elevated` | 卡片 / 浮层 | `#FFFFFF` |
-| `color/bg/subtle` | 分区 / chip 浅底 | `#CCFBF1` |
-| `color/border/subtle` | 分割线、描边 | `#99F6E4` |
-| `color/brand/primary` | 主按钮、链接（明亮 Teal） | `#14B8A6` |
-| `color/brand/primary-pressed` | 主按钮按下 | `#0D9488` |
-| `color/action/cta` | **强操作（复制提示词等）** | `#EC4899` |
-| `color/action/cta-pressed` | CTA 按下 | `#DB2777` |
-| `color/semantic/success` | 成功 | `#34D399` |
-| `color/semantic/warning` | 警告 | `#FBBF24` |
-| `color/semantic/error` | 错误 | `#F87171` |
+| `color/bg/subtle` | 分区 / chip（奶油杏） | `#FDE8D3` |
+| `color/border/subtle` | 分割线、描边（浅鼠尾草） | `#CFD6C4` |
+| `color/brand/primary` | 主按钮、链接（天蓝） | `#99CDD8` |
+| `color/brand/primary-pressed` | 主按钮按下 | `#7ABAC8` |
+| `color/action/cta` | **强操作底（柔珊瑚）** | `#F3C3B2` |
+| `color/action/cta-pressed` | CTA 按下 | `#E5B09E` |
+| `color/semantic/success` | 成功 | `#8FA896` |
+| `color/semantic/warning` | 警告 | `#E8C9A8` |
+| `color/semantic/error` | 错误 | `#D9A090` |
 
-**基调**：**明亮小清新** — 薄荷浴白底 + **Teal-500** 主色 + **Pink-500** 强操作；避免灰燕麦 / 莫兰迪灰绿。详见 `design.md` v1.1。
+**基调**：用户定制 **天蓝 + 薄荷浴 + 奶油杏 + 柔珊瑚 + 浅鼠尾草 + 森绿字**。详见 `design.md` v1.2。
 
 ## 间距与圆角 Token
 
@@ -64,6 +64,7 @@
 
 | 版本 | 日期 | 说明 |
 | --- | --- | --- |
+| 0.4 | 2026-05-10 | 对齐 `design.md` **v1.2 用户六色盘** |
 | 0.3 | 2026-05-10 | 对齐 `design.md` **v1.1 明亮 Teal + Pink**，废止偏莫兰迪 v1.0 色 |
 | 0.2 | 2026-05-10 | 对齐 `design.md` 小清新色板；旧 Sky+橙方案废止 |
 | 0.1 | 2026-05-10 | 初版：独立 Figma 文件、Token 表与 Figma 画布示意 |
