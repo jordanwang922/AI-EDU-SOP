@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { cookies } from "next/headers";
 import { prisma } from "@/lib/prisma";
 
 export async function GET() {
@@ -58,4 +59,19 @@ export async function POST(req: NextRequest) {
   }
 
   return NextResponse.json({ ok: true }, { status: 201 });
+}
+
+export async function DELETE(req: NextRequest) {
+  const session = (await cookies()).get("admin_session");
+  if (!session?.value) {
+    return NextResponse.json({ message: "unauthorized" }, { status: 401 });
+  }
+
+  const id = req.nextUrl.searchParams.get("id");
+  if (!id) {
+    return NextResponse.json({ message: "id required" }, { status: 400 });
+  }
+
+  await prisma.feedback.delete({ where: { id } });
+  return NextResponse.json({ ok: true });
 }
