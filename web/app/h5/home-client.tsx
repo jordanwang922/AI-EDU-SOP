@@ -11,21 +11,14 @@ type Category = {
   description: string;
 };
 
-type Problem = {
-  id: string;
-  title: string;
-};
-
 export default function H5HomeClient({
   categories,
-  recommended,
 }: {
   categories: Category[];
-  recommended: Problem[];
 }) {
   const router = useRouter();
   const [keyword, setKeyword] = useState("");
-  const [results, setResults] = useState<Problem[]>([]);
+  const [results, setResults] = useState<{ id: string; title: string }[]>([]);
   const [searchStatus, setSearchStatus] = useState<"idle" | "loading" | "done">("idle");
   const [searchError, setSearchError] = useState<string | null>(null);
 
@@ -53,7 +46,7 @@ export default function H5HomeClient({
       if (!res.ok) {
         throw new Error(`HTTP ${res.status}`);
       }
-      const data = (await res.json()) as { items?: Problem[] };
+      const data = (await res.json()) as { items?: { id: string; title: string }[] };
       const items = (data.items ?? []).map((x) => ({ id: x.id, title: x.title }));
       setResults(items);
       setSearchStatus("done");
@@ -154,20 +147,7 @@ export default function H5HomeClient({
         ))}
       </section>
 
-      <section className="mt-4 rounded-xl border border-[#CFD6C4] bg-white p-3">
-        <h3 className="font-semibold">今日推荐</h3>
-        <ul className="mt-2 space-y-2 text-sm">
-          {recommended.map((problem) => (
-            <li key={problem.id}>
-              <Link href={`/h5/problem/${problem.id}`} className="text-[#99CDD8]">
-                {problem.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <div className="mt-4 pb-4">
+      <div className="mt-4 pb-4 text-center">
         <Link
           href="/h5/feedback"
           className="inline-block text-base font-semibold text-[#657166] underline decoration-[#99CDD8] decoration-2 underline-offset-4"

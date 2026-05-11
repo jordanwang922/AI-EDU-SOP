@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#DAEBE3] px-6 py-10 text-[#657166]">
       <div className="mx-auto max-w-3xl rounded-2xl border border-[#CFD6C4] bg-white p-8">
-        <h1 className="text-3xl font-semibold">AI 亲子教育 SOP</h1>
+        <h1 className="text-3xl font-semibold">AI亲子教育速查手册</h1>
         <p className="mt-3 text-sm text-[#7E8780]">
           当前包含家长端 H5 与运营后台低保真可开发页面。
         </p>

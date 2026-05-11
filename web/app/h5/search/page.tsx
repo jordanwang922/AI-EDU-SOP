@@ -29,7 +29,7 @@ export default async function SearchPage({
   ).slice(0, 10);
 
   return (
-    <H5Shell title="搜索" showBack>
+    <H5Shell title="搜索" showBack backHref="/h5">
       <div className="rounded-xl border border-[#CFD6C4] bg-white px-4 py-3 text-sm text-[#7E8780]">
         🔍 搜关键词：拖拉、顶嘴、手机、焦虑…
       </div>

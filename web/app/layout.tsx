@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI亲子教育SOP",
+  title: "AI亲子教育速查手册",
   description: "家长端H5 + 运营后台",
 };
 

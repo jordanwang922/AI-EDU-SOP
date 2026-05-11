@@ -7,14 +7,10 @@ export default async function H5HomePage() {
     where: { isActive: true },
     orderBy: { sortOrder: "asc" },
   });
-  const recommended = await prisma.problem.findMany({
-    orderBy: { updatedAt: "desc" },
-    take: 2,
-  });
 
   return (
     <main className="mx-auto min-h-screen w-full max-w-[390px] bg-[#DAEBE3] px-4 py-2 text-[#657166]">
-      <H5HomeClient categories={categories} recommended={recommended} />
+      <H5HomeClient categories={categories} />
     </main>
   );
 }

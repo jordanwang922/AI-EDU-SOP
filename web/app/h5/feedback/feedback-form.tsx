@@ -142,47 +142,6 @@ export function FeedbackForm() {
         </button>
       </form>
 
-      <details className="mt-4 rounded-xl border border-[#CFD6C4] bg-white p-3 text-sm">
-        <summary className="cursor-pointer font-semibold text-[#657166]">
-          微信 / QQ 内提交无反应？点这里用兼容方式提交（无需脚本）
-        </summary>
-        <p className="mt-2 text-xs text-[#7E8780]">
-          提交后会跳转回本页并显示「已提交」提示。
-        </p>
-        <form
-          className="mt-3 space-y-2"
-          method="POST"
-          action="/api/feedback"
-          encType="application/x-www-form-urlencoded"
-        >
-          <input type="hidden" name="redirect" value="1" />
-          <input type="hidden" name="source" value="H5" />
-          <input type="hidden" name="type" value="内容建议" />
-          <label className="block space-y-1">
-            <span className="text-xs font-semibold">反馈内容</span>
-            <textarea
-              name="content"
-              required
-              rows={5}
-              className="w-full rounded-lg border border-[#CFD6C4] px-3 py-2"
-              placeholder="填写你的建议…"
-            />
-          </label>
-          <label className="flex items-center gap-2">
-            <span className="text-xs font-semibold">评分</span>
-            <select name="rating" className="rounded-lg border border-[#CFD6C4] px-2 py-1" defaultValue={4}>
-              {[1, 2, 3, 4, 5].map((n) => (
-                <option key={n} value={n}>
-                  {n} 分
-                </option>
-              ))}
-            </select>
-          </label>
-          <button type="submit" className="w-full rounded-lg bg-[#99CDD8] py-2 font-semibold text-[#657166]">
-            兼容提交
-          </button>
-        </form>
-      </details>
 
       {toast ? (
         <div

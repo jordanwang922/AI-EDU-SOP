@@ -34,7 +34,9 @@ export async function POST(req: NextRequest) {
   content = content.trim();
   if (!content) {
     if (wantRedirect) {
-      return NextResponse.redirect(new URL("/h5/feedback?err=empty", req.nextUrl.origin));
+      const h = req.headers.get("host") ?? req.nextUrl.host;
+      const p = req.headers.get("x-forwarded-proto") ?? "http";
+      return NextResponse.redirect(new URL("/h5/feedback?err=empty", `${p}://${h}`));
     }
     return NextResponse.json({ message: "content required" }, { status: 400 });
   }
@@ -50,7 +52,9 @@ export async function POST(req: NextRequest) {
   });
 
   if (wantRedirect) {
-    return NextResponse.redirect(new URL("/h5/feedback?sent=1", req.nextUrl.origin));
+    const host = req.headers.get("host") ?? req.nextUrl.host;
+    const proto = req.headers.get("x-forwarded-proto") ?? "http";
+    return NextResponse.redirect(new URL("/h5/feedback?sent=1", `${proto}://${host}`));
   }
 
   return NextResponse.json({ ok: true }, { status: 201 });

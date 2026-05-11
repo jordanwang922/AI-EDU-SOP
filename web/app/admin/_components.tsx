@@ -19,7 +19,7 @@ export function AdminShell({
     <main className="min-h-screen bg-[#DAEBE3] p-4 text-[#657166]">
       <div className="rounded-xl border border-[#CFD6C4] bg-white p-4">
         <header className="flex items-center border-b border-[#CFD6C4] pb-3">
-          <h1 className="text-lg font-semibold">AI亲子教育SOP · 运营后台</h1>
+          <h1 className="text-lg font-semibold">AI亲子教育速查手册 · 运营后台</h1>
           <h2 className="flex-1 text-center text-base font-semibold">{title}</h2>
           <span className="rounded-full bg-[#FDE8D3] px-3 py-1 text-xs">管理员</span>
         </header>

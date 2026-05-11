@@ -17,12 +17,12 @@ export default async function SearchResultPage({
         { tags: { some: { tag: { name: { contains: q } } } } },
       ],
     },
-    take: 3,
+    take: 50,
     orderBy: { updatedAt: "desc" },
   });
 
   return (
-    <H5Shell title={`「${q}」`} showBack backHref="/h5/search">
+    <H5Shell title={`「${q}」`} showBack backHref="/h5">
       <p className="text-xs text-[#7E8780]">为你找到 {items.length} 条相关问题</p>
       <div className="mt-3 space-y-2">
         {items.map((problem) => (

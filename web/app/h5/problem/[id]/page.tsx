@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { H5Shell } from "../../_components";
+import { CopyPromptCard } from "./copy-prompt-card";
 export const dynamic = "force-dynamic";
 
 export default async function ProblemPage({
@@ -33,7 +34,7 @@ export default async function ProblemPage({
   ];
 
   return (
-    <H5Shell title="方案详情" showBack backHref={`/h5/category/${problem.categoryId}`}>
+    <H5Shell title="方案详情" showBack backHref="/h5">
       <p className="text-xs text-[#7E8780]">
         首页 › {problem.category.name} › {problem.title}
       </p>
@@ -51,13 +52,7 @@ export default async function ProblemPage({
         ))}
       </div>
 
-      <article className="mt-2 rounded-xl border border-[#CFD6C4] bg-[#FFF8F3] p-3">
-        <h3 className="text-sm font-semibold">可复制提示词</h3>
-        <p className="mt-2 text-sm">{problem.prompt}</p>
-        <button className="mt-3 rounded-full bg-[#F3C3B2] px-4 py-2 text-sm font-semibold">
-          一键复制
-        </button>
-      </article>
+      <CopyPromptCard prompt={problem.prompt} />
     </H5Shell>
   );
 }
