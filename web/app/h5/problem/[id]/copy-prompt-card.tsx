@@ -25,7 +25,7 @@ export function CopyPromptCard({ prompt }: { prompt: string }) {
   return (
     <article className="relative mt-2 rounded-xl border border-[#CFD6C4] bg-[#FFF8F3] p-3">
       <h3 className="text-sm font-semibold">可复制提示词</h3>
-      <p className="mt-2 text-sm">{prompt}</p>
+      <p className="mt-2 whitespace-pre-wrap text-sm">{prompt}</p>
       <button
         type="button"
         onClick={handleCopy}

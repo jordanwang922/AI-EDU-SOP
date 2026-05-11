@@ -17,11 +17,6 @@ export default async function ProblemPage({
   if (!problem) notFound();
 
   const sections = [
-    {
-      label: "典型表现",
-      value: `• ${problem.title}。\n• 家长一催就容易进入对抗或回避状态。`,
-      bg: "bg-white",
-    },
     { label: "问题本质", value: problem.essence, bg: "bg-white" },
     { label: "常见误区", value: problem.mistakes, bg: "bg-[#FDE8D3]" },
     { label: "正确原则", value: problem.principles, bg: "bg-[#E8F4F7]" },

@@ -134,7 +134,7 @@ export default function H5HomeClient({
       </div>
 
       <section className="mt-4 space-y-2">
-        <h3 className="text-center text-2xl font-semibold">全部场景 · 15 个大类</h3>
+        <h3 className="text-center text-2xl font-semibold">全部场景 · {categories.length} 个大类</h3>
         {categories.map((category) => (
           <Link
             key={category.id}
