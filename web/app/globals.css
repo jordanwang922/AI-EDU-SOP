@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --background: #daebe3;
+  --foreground: #657166;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.entry-btn {
+  @apply rounded-xl border border-[#CFD6C4] bg-[#FDE8D3] px-4 py-3 text-center text-sm font-semibold text-[#657166];
+}
